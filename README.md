@@ -282,4 +282,3 @@ All experiments ran on a single NVIDIA RTX A4000 16 GB GPU.
 - S2 runs in a background thread; S1 is never blocked
 
 Total compute: ~42 GPU-hours across 3,000 evaluation episodes.
-# dual-system-vla-libero
