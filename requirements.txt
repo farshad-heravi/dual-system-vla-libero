@@ -1,0 +1,24 @@
+# PyTorch (CUDA 12.4 wheels — adjust for your CUDA version)
+# Install separately: pip install torch==2.4.0 torchvision==0.19.0 --index-url https://download.pytorch.org/whl/cu124
+
+# LeRobot with LIBERO simulation support
+lerobot[libero]
+
+# Transformers — use the lerobot-patched branch for pi0 compatibility
+# git+https://github.com/huggingface/transformers.git@fix/lerobot_openpi
+transformers>=4.45.0
+
+# Qwen2.5-VL dependencies
+qwen-vl-utils
+accelerate
+huggingface_hub
+
+# Flash-Attention 2 (requires CUDA; install with --no-build-isolation)
+# pip install flash-attn --no-build-isolation
+flash-attn>=2.0
+
+# Utilities
+einops
+pillow
+tqdm
+bitsandbytes
